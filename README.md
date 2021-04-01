@@ -2,7 +2,7 @@
 
 This is for running performance test with snort 3, adopted from snort3_demo/perf/3.0
 
-The PCAP file we focus on is get_1m_9k.pcap, but limited to it. You can add more PCAP files into pcap directory
+The PCAP file we focus on is get_1m_9k.pcap, but limited to it. You can add more PCAP files into pcap directory:
 
 [ -d "$SNORT_PCAPS" ] || SNORT_PCAPS=$PWD/pcap
 
@@ -13,6 +13,7 @@ and place it into obp directory:
 
 Note that that get_1m_9k.pcap has 8K packets so you will have to add a snaplen arg to the command line to properly process it. 
 You can do that by adding -s 9000 below:
+
 args="--warn-all --plugin-path $plugs $daq -H -Q -s 9000"
 
 To run testing:

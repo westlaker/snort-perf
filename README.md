@@ -3,6 +3,7 @@
 This is for running performance test with snort 3, adopted from snort3_demo/perf/3.0
 
 The PCAP file we focus on is get_1m_9k.pcap, but limited to it. You can add more PCAP files into pcap directory
+
 [ -d "$SNORT_PCAPS" ] || SNORT_PCAPS=$PWD/pcap
 
 Please grab this file https://snort.org/downloads/openappid/16584 -O snort-openappid.tar.gz

@@ -1,1 +1,1 @@
-# snort-perf
+# snort3-perf

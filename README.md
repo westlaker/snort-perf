@@ -6,7 +6,7 @@ The PCAP file we focus on is get_1m_9k.pcap, but limited to it. You can add more
 
 [ -d "$SNORT_PCAPS" ] || SNORT_PCAPS=$PWD/pcap
 
-Please grab this file https://snort.org/downloads/openappid/16584 -O snort-openappid.tar.gz
+Please grab this file: wget https://snort.org/downloads/openappid/16584 -O snort-openappid.tar.gz
 
 and place it into obp directory:
 

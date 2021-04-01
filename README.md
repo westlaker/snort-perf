@@ -29,10 +29,16 @@ validate.sh $conf.lua $mpse $num $pcap $z
 - z = number of threads
 
 ./validate.sh decode.lua hyperscan 1 pcap/get_1m_8k.pcapA
+
 ./validate.sh inspect.lua hyperscan 1 pcap/get_1m_8k.pcap 
+
+
 ./validate.sh detect-max.lua hyperscan 1 pcap/get_1m_8k.pcap 
+
 ./validate.sh detect-min.lua hyperscan 1 pcap/get_1m_8k.pcap
+
 ./validate.sh network-awareness.lua hyperscan 1 pcap/get_1m_8k.pcap
+
 ./validate.sh stream.lua hyperscan 1 pcap/get_1m_8k.pcap 
 
 2) Individual Performance Test:
@@ -46,9 +52,14 @@ repeat.sh $conf.lua $mpse $num $pcap $z
 - z = number of threads
 
 ./repeat.sh decode.lua hyperscan 1 pcap/get_1m_8k.pcap
+
 ./repeat.sh stream.lua hyperscan 1 pcap/get_1m_8k.pcap
+
 ./repeat.sh inspect.lua hyperscan 1 pcap/get_1m_8k.pcap
+
 ./repeat.sh detect-min.lua hyperscan 1 pcap/get_1m_8k.pcap
+
 ./repeat.sh detect-max.lua hyperscan 1 pcap/get_1m_8k.pcap
+
 ./repeat.sh network-awareness.lua hyperscan 1 pcap/get_1m_8k.pcap
 
